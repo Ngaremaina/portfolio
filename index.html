@@ -4,9 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
 </head>
 <body>
+    <script src="script.js"></script>
+    <header>
+        <div class="nav-bar">
+            <a href="">Ngare</a>
+            <nav class="nav-links nav-right">
+                <a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
+                <a href="#background"><i class="fa fa-history" aria-hidden="true"></i> My Background</i></a>
+                <a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"> My Projects</i></a>
+                <a href="#contacts"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home">
+        <div class="container">
+            <div class="introduction">
+                <h3>Hi I'm Ngare Maina</h3>
+                <p>Software Engineer</p>
+            </div>
+            <img src="./profile-pic.png" alt="">
+        </div>
+    </div>    
+
+    <div id="about">
+        <div class="container">
+            <div class="about-text">
+                <h3>Who is Ngare?</h3>
+                <p>I'm a student at Moringa School pursuing a certificate in Software Engineering who loves programming</p>
+            </div>
+            <img src="./profile.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="background">
+        <h3>My Background</h3>
+        <div class="container">
+            <div class="tab">
+                <button class="tablink" onclick="myBackground('Education')">Education</button>
+                <button class="tablink" onclick="myBackground('Work Experience')">Work Experience</button>
+                <button class="tablink" onclick="myBackground('Organizations')">Organizations</button>
+                <button class="tablink" onclick="myBackground('Achievements')">Achievements</button>
+
+                <div id="Education" class="tabcontent">
+                    <p>Bachelor of Science in Information Technology</p>
+                    <p>JKUAT</p>
+                </div>
+                
+                <div id="Work Experience" class="tabcontent">
+                    <p>Attache</p> 
+                    <p>Civil Registration Services</p>
+                </div>
+                
+                <div id="Organizations" class="tabcontent">
+                    <p>Google Developers Student Club</p>
+                </div>
+        
+                <div id="Achievements" class="tabcontent">
+                    <h4>Myner Gameplay</h4>
+                    <p>The Myner Gameplay Trailer provides a comprehensive overview of this YouTube channel. You can look forward to engaging objectives, intense combat, and fast-paced vehicle racing. When you subscribe, you'll be the first to see the gameplay videos.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
     
+    <div id="projects">
+        <h3>My Projects</h3>
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="content">
+                        <div class="icon">
+                            <a href="https://symptom-checker-k4x5.onrender.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>                        
+                        <img src="./symptom checker.jpg" alt="Symptom Checker">
+                        <h4>Symptom Checker</h4>
+                        <p>The symptom checker is a program that predicts the illness that the patient may be suffering from based on the symptoms provided. It directs you to the precautions you can take to control the illness. The symptoms are addressed in a yes or no format within a Streamlit form that is submitted to the app.</p>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="icon">
+                            <a href="https://lakucha-dishes.onrender.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a>                            
+                        </div>
+                        <img src="./lakucha dishes.jpg" alt="Lakucha Dishes">
+                        <h4>Lakucha Dishes</h4>
+                        <p>Lakucha Dishes showcase the finest cuisines from around the globe for which it is possible to locate the ingredients. Bootstrap and CSS for the front end and Python for the back end were employed to create the website.The website was created using the Flask framework, and it is hosted in the Render cloud.</p>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="icon">
+                            <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>   
+                        </div>
+                        <img src="./myner gameplay.jpg" alt="Myner Gameplay">
+                        <h4>Myner Gameplay</h4>
+                        <p>Myner Gameplay is a website where you can watch videos from the Myner Gameplay YouTube channel. Bootstrap and CSS for the front end and Python for the back end were employed to create the website.The website was created using the Flask framework, and it is hosted in the Render cloud.</p>
+                    </div>
+
+                </li>
+            </ul>  
+
+        </div>
+        
+    </div>
+    
+    <footer id="contacts">
+        <div class="container"> 
+            <div>
+                <p><img src="./profile-pic.png" alt="Ngare"></p>
+                <p>Ngare Maina</p>
+                <p>Copyright 2023</p>
+            </div>
+            <div>
+                <h4>Social</h4>
+                
+                <p><a href="mailto:ngaremaina4@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> Email</i></a></p>
+                <p><a href="https://www.linkedin.com/in/ngare-maina-3677b6179/"><i class="fa fa-linkedin" aria-hidden="true"> Linked in</i></a></p>
+                <p><a href="https://twitter.com/maina_ngare"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</i></a></p>
+            </div>
+            
+            <div>
+                <h4>Street Address</h4>
+                <p>Sky view Court</p>
+                <p>Utawala</p>
+                <p>Nairobi</p>
+            </div> 
+            <div>
+                <h4>Useful Links</h4>
+                <p><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></p>
+                <p><a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></p>
+                <p><a href="#contacts"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact</a></p>
+
+            </div>   
+        </div> 
+    </footer>
+
 </body>
 </html>
