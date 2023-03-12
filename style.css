@@ -32,8 +32,18 @@ body {
 .nav-bar a:hover{
     color: #FF5D73;
 }
-
-
+/* .parent-container{
+    position: relative;
+}
+.bottom-container{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    
+} */
+#copyright{
+    text-align: center;
+}
 .nav-right{
     float: right;
 }
